@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  font-family: "Akshar", sans-serif;
+  color: greenyellow;
+  padding: 20px;
+  background-color: rgb(0, 100, 0);
+}
+
+nav {
+  background-color: rgb(0, 100, 0);
+  text-align: center;
+}
+
+nav ul,
+a {
+  display: inline-flex;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+}
+
+nav li:hover {
+  background-color: #2bab0d;
+  border-radius: 3px;
+}
+
+nav .fa {
+  margin-right: 8px;
+}
+
+.submenu-1 {
+  display: none;
+}
+
+nav li:hover .submenu-1 {
+  display: block;
+  position: absolute;
+  background-color: rgb(0, 100, 0);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+nav li:hover .submenu-1 ul {
+  display: block;
+  margin: 10px;
+}
+
+nav li:hover .submenu-1 ul li {
+  width: 120px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+nav li:hover .submenu-1 ul li:last-child {
+  border-bottom: none;
+}
+
+nav li:hover .submenu-1 ul li a:hover {
+  color: #b2ff00;
+}
+
+img {
+  display: block;
+  margin-left: 185px;
+  margin-top: 160px;
+  height: 200px;
+}
